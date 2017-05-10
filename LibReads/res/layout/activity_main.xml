@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mzp.libreads.main.MainActivity" >
+
+    <com.mzp.libreads.main.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_read"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_read_selector"
+            android:text="@string/main_tab_read" />
+
+        <RadioButton
+            android:id="@+id/rb_books"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_books_selector"
+            android:text="@string/main_tab_books" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_message_selector"
+            android:text="@string/main_tab_message" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_me_selector"
+            android:text="@string/main_tab_me" />
+    </RadioGroup>
+
+</LinearLayout>
