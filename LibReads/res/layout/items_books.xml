@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_contact_item"
+    >
+    
+    <ImageView 
+        android:id="@+id/iv_bookImg"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:background="@drawable/t2"
+        android:layout_margin="5dp"
+        />
+    <TextView 
+        android:id="@+id/tv_bookname"
+        android:layout_toRightOf="@+id/iv_bookImg"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天蓝八部"
+        android:singleLine="true"
+        android:textColor="@color/color_526296"
+        android:textSize="@dimen/text_16"
+        />
+    
+    <TextView 
+        android:id="@+id/iv_bookKnow"
+        android:layout_toRightOf="@+id/iv_bookImg"
+        android:layout_below="@+id/tv_bookname"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:text="天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部天蓝八部"
+        android:textColor="@color/color_526296"
+        android:textSize="@dimen/text_12"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_bookKnow"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:text="天蚕土豆"
+        />
+    
+    
+
+</RelativeLayout>
